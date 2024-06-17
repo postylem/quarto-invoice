@@ -1,3 +1,7 @@
+EXPERIMENTAL FORK OF [mcanouil/quarto-invoice](https://github.com/mcanouil/quarto-invoice)
+
+---
+
 # Invoice Format Template (Typst)
 
 This is a Quarto template that assists you in creating PDF invoices via Typst.
@@ -8,7 +12,7 @@ You can use this as a template to create an invoice.
 To do this, use the following command:
 
 ```bash
-quarto use template mcanouil/quarto-invoice
+quarto use template postylem/quarto-invoice
 ```
 
 This will install the extension and create an example qmd file that you can use as a starting place for your invoice.
