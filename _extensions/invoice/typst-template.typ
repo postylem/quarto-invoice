@@ -37,7 +37,7 @@
   penalty: "€40",
   paper: "a4",
   margin: (x: 2.5cm, y: 2.5cm),
-  lang: "en_UK",
+  lang: "en_CA",
   font: ("Alegreya Sans", "Alegreya Sans SC", "Alegreya Sans", "Alegreya Sans SC"),
   fontsize: 12pt,
   body
@@ -200,20 +200,20 @@
 
     v(fontsize * 2)
 
-    text(luma(100),
-      emph(
-        sender.at("name").replace("\\", "")
-          + " sent you this invoice on "
-          + format-date(issued)
-          + ". The invoice must be paid under "
-          + count-days(issued, parse-date(invoice.at("due")))
-          + " day(s), otherwise you will have to pay a late fee of "
-          + str(fee)
-          + " % and a "
-          + str(penalty)
-          + " penalty for recovery costs. "
-          + "No discount will be granted for early settlement."
-      )
-    )
+    // text(luma(100),
+    //   emph(
+    //     sender.at("name").replace("\\", "")
+    //       + " sent you this invoice on "
+    //       + format-date(issued)
+    //       + ". The invoice must be paid under "
+    //       + count-days(issued, parse-date(invoice.at("due")))
+    //       + " day(s), otherwise you will have to pay a late fee of "
+    //       + str(fee)
+    //       + " % and a "
+    //       + str(penalty)
+    //       + " penalty for recovery costs. "
+    //       + "No discount will be granted for early settlement."
+    //   )
+    // )
   })
 }
