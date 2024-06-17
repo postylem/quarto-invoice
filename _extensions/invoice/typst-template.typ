@@ -194,6 +194,21 @@
       linebreak()
       text(luma(100), emph("To use as label on your bank transfer to identify the transaction."))
       linebreak()
+    } else if "routing" in bank and "account" in bank and "name" in bank and "address" in bank and bank != none {
+      heading(level: 3, "Payment information")
+      v(fontsize * 0.5)
+      "Routing #: " + bank.at("routing").replace("\\", "")
+      linebreak()
+      "Account #: " + bank.at("account").replace("\\", "")
+      linebreak()
+      "Bank: " + bank.at("name").replace("\\", "")
+      linebreak()
+      bank.at("address").replace("\\", "")
+      linebreak()
+      // "Reference: " + strong(invoice.at("reference").replace("\\", ""))
+      // linebreak()
+      // text(luma(100), emph("To use as label on your bank transfer to identify the transaction."))
+      // linebreak()
     } else {
       hide("a")
     }
